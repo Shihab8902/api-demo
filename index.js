@@ -10,9 +10,9 @@ app.listen(PORT, ()=>{
 });
 
 app.get("/", (req, res)=>{
-    res.status(200).sendFile(__dirname + "/views/indec.html");
+    res.status(200).send("Server is running......");
 });
 
 app.get("/users", (req, res)=>{
-    res.status(200).send("This is the users route")
+    res.status(200).sendFile(__dirname+"/views/index.html");
 });
