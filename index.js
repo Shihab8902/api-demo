@@ -10,7 +10,7 @@ app.listen(PORT, ()=>{
 });
 
 app.get("/", (req, res)=>{
-    res.status(200).send("Server is running......")
+    res.status(200).sendFile(__dirname + "/views/indec.html");
 });
 
 app.get("/users", (req, res)=>{
